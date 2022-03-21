@@ -21,7 +21,7 @@ const AllApplications = () => {
         const fetchApplications = async () => {
             try {
                 const response = await sendRequest(
-                    'http://localhost:8080/job-app-sys-api/applications',
+                    'https://job-application-sys.herokuapp.com/job-app-sys-api/applications',
                     'GET',
                     null,
                     {

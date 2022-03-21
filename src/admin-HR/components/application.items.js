@@ -29,7 +29,7 @@ const ApplicationItems = props => {
         if (nextChecked) {
             try {
                 await sendRequest(
-                    `http://localhost:8080/job-app-sys-api/applications/status-on/${props.id}`,
+                    `https://job-application-sys.herokuapp.com/job-app-sys-api/applications/status-on/${props.id}`,
                     'PUT', {},
                     {
                         'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ const ApplicationItems = props => {
         } else {
             try {
                 await sendRequest(
-                    `http://localhost:8080/job-app-sys-api/applications/status-off/${props.id}`,
+                    `https://job-application-sys.herokuapp.com/job-app-sys-api/applications/status-off/${props.id}`,
                     'PUT', {},
                     {
                         'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ const ApplicationItems = props => {
                     <Switch onChange={switchHandler} checked={checked} />
                 </td>
                 <td><Link to={`/${props.id}`} className="text-primary"><i className="far fa-eye"></i></Link></td>
-                <td onClick={() => window.open(`http://localhost:8080/job-app-sys-api/applications/downloadFile/${props.id}`, "_blank") } className="text-primary"><i class="fas fa-file-alt"></i></td>
+                <td onClick={() => window.open(`https://job-application-sys.herokuapp.com/job-app-sys-api/applications/downloadFile/${props.id}`, "_blank") } className="text-primary"><i class="fas fa-file-alt"></i></td>
             </tr>
         </React.Fragment>
     )
