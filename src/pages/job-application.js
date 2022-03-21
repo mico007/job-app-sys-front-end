@@ -152,7 +152,7 @@ const JobApplication = () => {
                                 </div>
                                 <hr />
                                 <div className="col-md-8 mb-3">
-                                    <label htmlFor="cv" className="form-label">CV/Resume *</label>
+                                    <label htmlFor="cv" className="form-label">CV/Resume(.pdf) *</label>
                                     <input required onChange={(e) => { 
                                         setFileCv(e.target.files[0]);
                                     }} className="form-control form-control-md" id="cv" type="file" />
