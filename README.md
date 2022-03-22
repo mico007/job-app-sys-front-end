@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Getting Started with Job Application System
+
+##Login Credentials Admin-HR
+- Username: test@test.com
+- Password: 123456
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
