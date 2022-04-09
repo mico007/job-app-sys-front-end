@@ -94,13 +94,6 @@ const JobApplication = () => {
 
     return (
         <React.Fragment>
-            <section className="bg-dark d-flex flex-wrap justify-content-end align-items-end border-top">
-                <ul className=" col-md-4 justify-content-end list-unstyled d-flex" style={{ marginRight: "30px" }}>
-                    <div className="my-4">
-                        <Link to="/admin-HR" className="text-light" style={{ fontSize: "1.3rem" }}><i className="fas fa-user-tie"></i> sysHR</Link>
-                    </div>
-                </ul>
-            </section>
             <div className="container py-5">
                 <div className="row justify-content-center col-lg-9">
                     {showAlert && (<div className="alert alert-success alert-dismissible fade show pt-" role="alert">
@@ -187,6 +180,13 @@ const JobApplication = () => {
                     </div>
                 </div>
             </div>
+            <footer className="bg-dark d-flex flex-wrap justify-content-end align-items-end border-top">
+                <ul className=" col-md-4 justify-content-end list-unstyled d-flex" style={{ marginRight: "30px" }}>
+                    <div className="my-4">
+                        <Link to="/admin-HR" className="text-light" style={{ fontSize: "1.3rem" }}><i className="fas fa-user-tie"></i> sysHR</Link>
+                    </div>
+                </ul>
+            </footer>
             
 
         </React.Fragment>
