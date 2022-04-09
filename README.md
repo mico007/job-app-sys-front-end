@@ -3,8 +3,7 @@
 ##Login Credentials Admin-HR
 - Username: test@test.com
 - Password: 123456
-##Login Link
-- https://job-application-system00.herokuapp.com/admin-HR
+- Login Link: https://job-application-system00.herokuapp.com/admin-HR
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
